@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 10em 10em;
+    background: url(./pawel-nolbert-4u2U8EO9OzY-unsplash.jpg);
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Background animation */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #706b6b, #0c0a0a, #131616, #614848);
+    background-size: 500% 100%;
+    /* Increase the size for the gradient animation */
+    animation: gradientAnimation 6s ease infinite;
+    /* Applies the animation */
+}
+
+/* Defines the animation behavior */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 130% 50%;
+    }
+
+    50% {
+        background-position: 50% 25%;
+    }
+
+    100% {
+        background-position: 130% 50%;
+    }
+}
+
+.glass {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(168, 42, 42, 0.1);
+    padding: 50px;
+    color: #29be0b;
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 8px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 30px 30px 30px rgba(14, 95, 202, 0.3);
+    line-height: 1.5;
+    transform: translatey(-5%);
+    transition: transform 0.5s;
+}
+
+.glass {
+    /* Your existing styles */
+    color: white;
+    /* Initial text color */
+}
+
+.glass-1 {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(212, 11, 11, 0.1);
+    padding: 50px;
+    color: rgb(43, 247, 111);
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(49, 99, 165, 0.3);
+    line-height: 1.5;
+    transform: translatey(-5%);
+    transition: transform 0.5s;
+    font-size: 1.7rem;
+}
+
+.glass h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.glass h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.input input {
+    width: 200%;
+    height: 70px;
+    border: none;
+    padding-left: 30px;
+    padding-top: 0;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.glass p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
